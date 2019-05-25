@@ -58,7 +58,7 @@
 .price .header {
   background-color: #111;
   color: white;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .price li {
@@ -87,6 +87,45 @@
     width: 100%;
   }
 }
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 </style>
 </head>
 <body>
@@ -123,7 +162,6 @@
 					<li><a href="#speakers">Speakers</a></li>
 					<li><a href="#sponsors">Sponsors</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="blog.html">Blog</a></li>
 				</ul>
 			</nav>
 			<!-- /Navigation -->
@@ -877,49 +915,52 @@
 						</div>
 						<div class="columns">
 						  <ul class="price">
-						    <li class="header">Early Bird</li>
-						    <li class="grey">Public </li>
-						    <li class="grey">RP. 640.000</li>
-						    <li>25GB Storage</li>
-						    <li>25 Emails</li>
-						    <li>25 Domains</li>
-						    <li>2GB Bandwidth</li>
-						    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+						    <li class="header">Early Bird          Public</li>
+						    <li class="grey">RP. 600.000</li>
+						    <li>6x meals for the span of 2 days</li>
+						    <li>Mentorship from 5 Local Entrepreneurs</li>
+						    <li>Cool T-shirt</li>
+						    <li>Receive quality feedback from professionals and your peers</li>
+						    <li>Chance to present your idea in front of investors</li>
+						    <li class="grey"><a href="http://bit.ly/VisioWorkshopJuni2019" class="button">Daftar</a></li>
 						  </ul>
 						</div>
 
 						<div class="columns">
 						  <ul class="price">
-						    <li class="header" >Early Bird</li>
-						    <li class="grey">$ 24.99 / year</li>
-						    <li>25GB Storage</li>
-						    <li>25 Emails</li>
-						    <li>25 Domains</li>
-						    <li>2GB Bandwidth</li>
-						    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+						    <li class="header">Early Bird College Student (S1)</li>
+						    <li class="grey">RP. 320.000</li>
+						    <li>6x meals for the span of 2 days</li>
+						    <li>Mentorship from 5 Local Entrepreneurs</li>
+						    <li>Cool T-shirt</li>
+						    <li>Receive quality feedback from professionals and your peers</li>
+						    <li>Chance to present your idea in front of investors</li>
+						    <li class="grey"><a href="http://bit.ly/VisioWorkshopJuni2019" class="button">Daftar</a></li>
 						  </ul>
 						</div>
 						<div class="columns">
 						  <ul class="price">
-						    <li class="header" style="background-color:#4CAF50">Pro</li>
-						    <li class="grey">$ 24.99 / year</li>
-						    <li>25GB Storage</li>
-						    <li>25 Emails</li>
-						    <li>25 Domains</li>
-						    <li>2GB Bandwidth</li>
-						    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+						    <li class="header" style="background-color:#3366ff ">After June 15th, 2019 Public</li>
+						    <li class="grey">RP. 800.000</li>
+						    <li>6x meals for the span of 2 days</li>
+						    <li>Mentorship from 5 Local Entrepreneurs</li>
+						    <li>Cool T-shirt</li>
+						    <li>Receive quality feedback from professionals and your peers</li>
+						    <li>Chance to present your idea in front of investors</li>
+						    <li class="grey"><a href="http://bit.ly/VisioWorkshopJuni2019" class="button">Daftar</a></li>
 						  </ul>
 						</div>
 
 						<div class="columns">
 						  <ul class="price">
-						    <li class="header" style="background-color:#4CAF50">Pro</li>
-						    <li class="grey">$ 24.99 / year</li>
-						    <li>25GB Storage</li>
-						    <li>25 Emails</li>
-						    <li>25 Domains</li>
-						    <li>2GB Bandwidth</li>
-						    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+						    <li class="header" style="background-color:#3366ff">After June 15th, 2019 College Student (S1)</li>
+						    <li class="grey">RP. 400.000</li>
+						    <li>6x meals for the span of 2 days</li>
+						    <li>Mentorship from 5 Local Entrepreneurs</li>
+						    <li>Cool T-shirt</li>
+						    <li>Receive quality feedback from professionals and your peers</li>
+						    <li>Chance to present your idea in front of investors</li>
+						    <li class="grey"><a href="http://bit.ly/VisioWorkshopJuni2019" class="button">Daftar</a></li>
 						  </ul>
 						</div>
 
@@ -939,7 +980,7 @@
 
 	
 
-	<!-- Contact -->
+	<!-- FAQ -->
 	<div id="contact" class="section">
 		<!-- container -->
 		<div class="container">
@@ -947,45 +988,184 @@
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Contact</span> <span style="color: #dd0a37;">Info</span></h3>
+					<h3 class="title"><span>FAQ</span> </h3>
+					<div>
+						<button class="accordion">What is Sekolah Startup Visio?</button>
+						<div class="panel">
+  							<p>Sekolah Startup Visio (Visio Startup Class) is an activity which held by Visio Incubator to embrace the people who have not known yet about tech startup and don't have any background of tech education but want to build a business in a tech startup.</p>
+						</div>
+					</div>
+					<div>
+						<button class="accordion">What kind of topics will be discussed in Sekolah Startup Visio?</button>
+						<div class="panel">
+  							<p>In Sekolah Startup Visio, participants will learn about how to start your tech startup, customer validation, product validation, market validation, and investment strategies.</p>
+						</div>
+					</div>
+					<div>
+						<button class="accordion">Who are participants who may join Sekolah Startup Visio?</button>
+						<div class="panel">
+  							<p>If you haven't known how to build a tech startup, it is suitable for you to join this event. Every people from every background can join Sekolah Startup Visio. If you are a college student, fresh graduate, or employee from some company can join this event. </p>
+  							<p>If I am not a participant who wants to start a tech startup, can I still join this event?
+							No problem. Although you have not had willing to build a tech startup, you still can join us in Sekolah Startup Visio.
+							</p>
+						</div>
+					</div>
+					<div>
+						<button class="accordion">How to join and pay for this event?</button>
+						<div class="panel">
+  							<p>You just need to access: 
+							<a href="https://
+							bit.ly/VisioWorkshopJuni2019">
+							bit.ly/VisioWorkshopJuni2019 </a>
+							</p>
+							<p>
+								And fill your biodata on it. After you register, you must pay the payment to one of these available accounts:
+							
+								<p>BCA: 1081630785 (Silvester Chrisya Andira)</p>
+								<p>BNI: 0347208358 (Silvester Chrisya Andira)</p>
+							</p>
+						
+							<p>
+								After you pay, don't forget to send the receipt to Whatsapp via one of these available accounts:
+								<p>Silvester: 0819-0626-5770</p>
+								<p>Yenni: 0813-7902-9316</p>
+
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">What kind of things that I must bring to Sekolah Startup Visio?</button>
+						<div class="panel">
+  							<p>Please bring your laptop and stationery most important things is to bring your brilliant idea to build your own tech startup.</p>
+
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">Is there early bird payment? If yes, when is it ended?</button>
+						<div class="panel">
+  							<p>Yup, there is. There is a 20% discount for the fastest people. This program is held until June 15th, 2019.</p>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">If I just attend 1 of 2 days of the event, could I still register?</button>
+						<div class="panel">
+  							<p>You are suggested to join this event for 2 days. You will not be disappointed to join this event on the weekend for 2 days because you can explore yourself to develop your own tech startup with all experienced mentors.</p>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">How does Sekolah Startup Viso will be run?</button>
+						<div class="panel">
+							<div>
+								<p><b>First Day</b>
+								</p>
+								<ul>
+									<li>
+										•	On the first day will be 4 sessions: 2 sessions before lunch and 2 sessions after lunch.
+									</li>
+									<li>•	Participants are welcome to submit their ideas to other participants in the first session at the first day, at the beginning of the activity, and other participants are welcome to join the ideas that are most interesting for them.</li>
+									<li>•	Participants will be taught about the fundamentals of tech startup for non-tech startup founders like customer validation, product validation, business model validation, market validation, and investment strategies.</li>
+									<li>•	Participants make mock-up/prototype/ Minimum Viable Product (MVP) from the product which wants to build.
+									</li>
+								</ul>
+							</div>
+
+							<div>
+								<p ><b>Second Day</b>
+								</p>
+								<ul>
+									<li>
+										•	Participants must launch their mock-up/ prototype product to market via web or landing page
+									</li>
+									<li>•	Participants can analyze feedback from the consumer</li>
+									<li>•	•	The last session some investors from Ventures Capital will be judging the product idea and execution</li>
+									
+								</ul>
+							</div>
+  							
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">What are the outputs of this event?</button>
+						<div class="panel">
+  							<ul>
+  								<li>•	You can build digital startup although you come from a non-tech startup background.</li>
+  								<li>•	You can get some relation from mentors, investors, and other participants. </li>
+  								<li>•	You, guys, make digital / tech startup within 2 days</li>
+  							</ul>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">Where will Sekolah Startup Visio be held?</button>
+						<div class="panel">
+  							<p>Sekolah Startup Visio will be held in Innovation Room Kementerian Ketenagakerjaan Republik Indonesia at Parking Building M Floor, Jalan Jenderal Gatot Subroto Kav.51 East Kuningan, South Jakarta.</p>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">Will my startup ideas get some funding if I join this event?</button>
+						<div class="panel">
+  							<p>It could happen. If you have a brilliant, unique and original startup idea, you could get funding assistance to build your startup, there are some Ventures Capital companies in the last session, please pitch to them.</p>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">Is there any continuation after this event?, Do participants still can connect and ask questions to the mentors after the event is over?</button>
+						<div class="panel">
+  							<p>Of course. This is one of the benefits you can attend at Sekolah Startup Visio. You can build networks, contact and ask mentors and investors in the future.</p>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">What is the difference Sekolah Startup Visio with some events?</button>
+						<div class="panel">
+  							<li>Visio Incubator is an institution which helps tech founders to build and help to get some funding for their business, so they are getting used to with education event, mentoring and so on not only teaching about the theories.</li>
+  							<li>The mentors are the active entrepreneur who does their business every day in a tech startup, so they can explain and transfer of real daily business knowledge to the participants.</li>
+  							<li>Investors (ventures capital companies) will be attending a pitching session. You will get some feedback in this session.</li>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">I have a valuable idea about building a tech startup, but I am afraid to deliver it as I am afraid that my idea will be stolen by other participants. How about this?</button>
+						<div class="panel">
+  							<p>The idea is cheap, execution is the most important thing. Don't be afraid, just say your brilliant idea, who knows you will get a co-founder or funding at this event.</p>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">Is it true that I can build a digital startup after participating in this event?</button>
+						<div class="panel">
+  							<p>The truth is, you will get a solid understanding of how to build a tech / digital startup for non-tech founders. </p>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion">I still doubt whether non-tech founders like me can build tech startup?</button>
+						<div class="panel">
+  							<p>Well, you must answer these questions. What is the education background of Jack Ma, Steve Jobs, and Nadiem Makarim? Do they have a tech startup education background? If you check these at Google, the answers are No.
+							Hopefully, it can provide insight for you.
+							So see you in Sekolah Startup Visio!
+							</p>
+						</div>
+					</div>
+
+
 				</div>
 				<!-- /section title -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Address</h3>
-						<p>2635 Simons Hollow Road, NEW YORK</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Phone</h3>
-						<p>570-751-2415</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Email</h3>
-						<a href="#">event@support.com</a>
-					</div>
-				</div>
-				<!-- /contact -->
+				
 
 			</div>
 			<!-- /row -->
 		</div>
 		<!-- /container -->
 
-		<!-- Map -->
-		<div id="map"></div>
-		<!-- /Map -->
+		
 	</div>
 	<!-- /Contact -->
 
@@ -1044,6 +1224,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/google-map.js"></script>
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight){
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+	</script>
 
 </body>
 
