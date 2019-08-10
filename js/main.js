@@ -12,6 +12,8 @@
 		$('.main-nav').toggleClass('open');
 	});
 
+
+
 	// Fixed nav
 	$(window).on('scroll', function() {
 		var wScroll = $(this).scrollTop();
@@ -25,6 +27,7 @@
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
 		}, 800);
+		 $('.main-nav').slideUp("fast");
 	});
 
 	// Section title animation
